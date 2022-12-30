@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import Logo from '../public/assets/logo.svg'
-import {FaFacebookF} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import {BsPinterest,BsTwitter,BsYoutube} from 'react-icons/bs'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -22,12 +20,12 @@ const Navbar = () => {
                 <Image src={Logo}/>
             </div>
             <ul className='gap-4 items-center justify-center hidden md:flex text-xl'>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">GALLERY</a></li>
-                <li><a href="/">INTERVIEW</a></li>
-                <li><a href="/">ARTICLES</a></li>
-                <li><a href="/">CONTACT</a></li>
+                <li><Link href="/">HOME</Link></li>
+                <li><Link href="/">ABOUT</Link></li>
+                <li><Link href="/">GALLERY</Link></li>
+                <li><Link href="/">INTERVIEW</Link></li>
+                <li><Link href="/">ARTICLES</Link></li>
+                <li><Link href="/">CONTACT</Link></li>
             </ul>
             <div onClick={handleClick} className='pr-2 block z-50 md:hidden'>
             {
@@ -36,12 +34,12 @@ const Navbar = () => {
             </div>
             <div className={navMobile ? 'fixed top-0 bg-white right-0 w-full h-screen ease-in duration-300 text-3xl flex flex-col items-center justify-center' : 'fixed top-[-100%]'}>
                 <ul className='flex flex-col items-center justify-center gap-4 font-semibold'>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/">ABOUT</a></li>
-                    <li><a href="/">GALLERY</a></li>
-                    <li><a href="/">INTERVIEW</a></li>
-                    <li><a href="/">ARTICLES</a></li>
-                    <li><a href="/">CONTACT</a></li>
+                    <li><Link href="/">HOME</Link></li>
+                    <li><Link href="/">ABOUT</Link></li>
+                    <li><Link href="/">GALLERY</Link></li>
+                    <li><Link href="/">INTERVIEW</Link></li>
+                    <li><Link href="/">ARTICLES</Link></li>
+                    <li><Link href="/">CONTACT</Link></li>
                 </ul>
             </div>
 

@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 // import {PhotoAlbum} from 'react-photo-album'
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+// import Lightbox from "yet-another-react-lightbox";
+// import "yet-another-react-lightbox/styles.css";
 import { galleryData } from "../public/data/data";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
 
-const slides = galleryData.images.map(({ original, width, height }) => ({
-  src: original,
-  width,
-  height,
-}));
+// const slides = galleryData.images.map(({ original, width, height }) => ({
+//   src: original,
+//   width,
+//   height,
+// }));
 
 const Gallery = () => {
-  const [index, setIndex] = useState(-1);
+  // const [index, setIndex] = useState(-1);
 
   const { images } = galleryData;
 
@@ -32,9 +32,9 @@ const Gallery = () => {
                 onClick={(event,photo,index) => setIndex(index)}
             />  */}
           {images.map((item, index) => (
-            <Image className="cursor-pointer" src={item.original} />
+            <Image className="cursor-pointer" key={index} src={item.original} />
           ))}
-
+{/* 
           {
             <Lightbox
               slides={slides.original}
@@ -43,7 +43,7 @@ const Gallery = () => {
               index={index}
               close={() => setIndex(-1)}
             />
-          }
+          } */}
         </div>
         <div className="flex items-center justify-center">
           <button className="border bg-black text-white border-white px-3 py-3 flex items-center gap-1">
