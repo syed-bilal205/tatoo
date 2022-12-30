@@ -1,0 +1,26 @@
+.bg{
+    background-image: url(../public/assets/heroImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;    
+    background-position: fixed;
+}
+.about{
+    background-image: url(../public/assets/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    font-size: 360px;
+    letter-spacing: 0.5rem;
+    color: transparent;
+    font-weight: bolder;
+    
+}
+.interview{
+    background-image: url(../public//assets/interview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
