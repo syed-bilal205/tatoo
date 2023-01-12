@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar'
 import Skills from '../components/Skills'
 
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Head>
@@ -31,3 +31,4 @@ export default function Home() {
     </>
   )
 }
+export default Home
