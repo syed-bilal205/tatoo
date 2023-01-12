@@ -1,4 +1,3 @@
-import setupAnalyticsService from '../lib/my-analytics-service'
 import Head from 'next/head'
 import About from '../components/About'
 import Contact from '../components/Contact'
@@ -9,8 +8,6 @@ import Hero from '../components/Hero'
 import Interview from '../components/Interview'
 import Navbar from '../components/Navbar'
 import Skills from '../components/Skills'
-
-setupAnalyticsService(process.env.false)
 
 
 export default function Home() {
