@@ -15,11 +15,11 @@ const Navbar = () => {
 
   return (
     <>
-        <header className=' flex justify-between items-center h-full w-full px-10 shadow-lg py-2'>
+        <header className=' flex justify-between bg-white items-center h-full  px-1 md:px-10 shadow-lg py-2'>
             <div className='z-50'>
-                <Image src={Logo}/>
+                <Image src={Logo} alt="logo"/>
             </div>
-            <ul className='gap-4 items-center justify-center hidden md:flex text-xl'>
+            <ul className='gap-4 items-center text-black justify-center hidden md:flex text-xl'>
                 <li><Link href="/">HOME</Link></li>
                 <li><Link href="/">ABOUT</Link></li>
                 <li><Link href="/">GALLERY</Link></li>

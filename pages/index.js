@@ -8,7 +8,7 @@ import Hero from '../components/Hero'
 import Interview from '../components/Interview'
 import Navbar from '../components/Navbar'
 import Skills from '../components/Skills'
-import Testimonial from '../components/Testimonial'
+
 
 export default function Home() {
   return (
@@ -24,7 +24,6 @@ export default function Home() {
       <About/>
       <Gallery/>
       <Skills/>
-      <Testimonial/>
       <Interview/>
       <Contact/>
       <Footer/>

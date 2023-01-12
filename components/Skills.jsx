@@ -53,7 +53,7 @@ const Skills = () => {
 
   return (
     <>
-      <section ref={ref} className="pt-10">
+      <section ref={ref} className="pt-10 bg-white">
         <div className='container mx-auto py-4'>
             <div className='flex flex-col xl:flex-row justify-between items-center gap-y-12'>
                 <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>

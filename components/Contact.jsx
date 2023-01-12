@@ -6,7 +6,7 @@ import {IoIosMail} from 'react-icons/io'
 const Contact = () => {
   return (
     <>
-        <div className='px-6 md:px-16'>    
+        <div className='bg-white px-6 md:px-16'>    
         <h2 className='text-6xl font-semibold py-8'>GET IN TOUCH <br />WITH ME:</h2>
       <div className='flex flex-col items-center justify-evenly w-full  gap-6 px-6 md:flex-row md:pl-24'>
         <div className='w-full'>
